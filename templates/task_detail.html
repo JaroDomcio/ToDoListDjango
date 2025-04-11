@@ -1,0 +1,19 @@
+<h2>Choosen task details</h2>
+
+<div><strong>{{ task.title }}</strong></div>
+<div>{{ task.description }}</div>
+<div>
+    {% if task.completed %}
+        Completed
+    {% else %}
+        Not completed
+    {% endif %}
+</div>
+<div>{{ task.deadline }}</div>
+<div><a href="{% url 'delete_task' task.id %}">
+    <button>Delete</button>
+</a>
+<div><a href="{% url 'task_list' %}">
+    <button>Back to task list</button>
+</a>
+</div>
