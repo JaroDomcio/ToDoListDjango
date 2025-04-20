@@ -10,7 +10,7 @@
             <small>{{ task.description }}</small>
         </li>
         {% empty %}
-            Brak Zadan
+            No tasks
     {% endfor %}
     <a href="{% url 'create_task' %}">
         <button> New Task </button>
