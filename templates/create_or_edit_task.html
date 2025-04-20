@@ -1,5 +1,9 @@
 <body>
-    <h1> Add new task</h1>
+    {% if edit_mode == False %}
+        <h1> Add new task</h1>
+    {% else %}
+        <h1> Edit task</h1>
+    {% endif %}
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
