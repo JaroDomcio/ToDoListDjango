@@ -1,5 +1,5 @@
-{#{% extends 'base.html' %}#}
-{#{% block content %}#}
+{% extends 'base.html' %}
+{% block content %}
 <h2>Your taks:</h2>
 <ul>
     {% for task in tasks %}
@@ -16,4 +16,4 @@
         <button> New Task </button>
     </a>
 </ul>
-{#{% endblock %}#}
+{% endblock content %}
